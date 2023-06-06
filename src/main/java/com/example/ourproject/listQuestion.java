@@ -38,4 +38,19 @@ public class listQuestion {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void switchToCategory(MouseEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("AddingCategory.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void switchToImportQuestion(MouseEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("ImportQuestion.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

@@ -41,7 +41,7 @@ public class blankFor3Choices implements Initializable {
     private Parent root;
     @FXML
     public void switchToSceneList(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("listQuestion.fxml"));
+        root = FXMLLoader.load(getClass().getResource("QuestionList.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
