@@ -84,7 +84,7 @@ public class treeView implements Initializable {
         treeView.setOnMouseClicked(mouseEvent -> {
             TreeItem<String> selectedItem = (TreeItem<String>) treeView.getSelectionModel().getSelectedItem();
             if (selectedItem.getValue() == "Sinh học kỳ 2 L7(67)" ) {
-                switchToScene("listQuestion.fxml");
+                switchToScene("QuestionList.fxml");
             }
         });
     }
